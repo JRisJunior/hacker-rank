@@ -6,15 +6,15 @@ def miniMaxSum(arr)
   total_sum = 0
   four_array = []
   arr.each do |value|
-    p value
     total_sum += value
-    p total_sum
   end
   while leave_out < arr.length
     four_array << total_sum - (arr[leave_out])
     leave_out += 1
   end
-  p four_array
+  print four_array.min
+  print " "
+  print four_array.max
 end
 
 miniMaxSum(arr)
